@@ -21,15 +21,18 @@
     href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto&family=Work+Sans:wght@400;500&display=swap"
     rel="stylesheet"
   />
+  <!-- JS -->
+  <!-- Login Modal Loader -->
+  <script src="modal-sign.js"></script>
   <!-- CSS -->
   <link rel="stylesheet" href="./assets/style.css" />
+  <link rel="stylesheet" href="./assets/sign.css" />
 </head>
-
 <body>
   <header id="navbar-load" class="header">
     <nav class="navbar navbar-expand-sm mx-3">
       <div
-        class="d-flex flex-row align-items-center container-fluid navbar-container"
+        class="d-flex flex-row align-items-center sticky-top container-fluid navbar-container"
       >
         <!-- Logo -->
         <a class="navbar-brand" href="#"><span>Free</span>Movies</a>
@@ -79,7 +82,10 @@
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
           >
-            <button class="btn btn-link text-decoration-none signin-chm-btn">
+            <button
+              class="btn btn-link text-decoration-none signin-chm-btn"
+              onclick="showModal()"
+            >
               Sign in
             </button>
           </div>
