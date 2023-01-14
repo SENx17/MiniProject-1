@@ -286,7 +286,7 @@ input[type]:checked ~ span.middle {
 }
 
 .btn-sign:hover:before {
-  top: -100px;
+  top: -90px;
   left: -20px;
 }
 
