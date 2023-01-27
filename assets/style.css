@@ -416,18 +416,17 @@ input[type]:checked ~ span.middle {
   justify-content: center;
 }
 
-.col-sm-6,
+.col-sm-12,
 .col-md-4,
 .col-xl-2 {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 /* Title 2 */
 
 .card {
   position: relative;
-  padding: 0;
-  margin: 0 0 5px 0;
   border-radius: 20px;
   overflow: hidden;
   max-width: 280px;
@@ -435,11 +434,6 @@ input[type]:checked ~ span.middle {
   cursor: pointer;
   border: none;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-.card .card-image {
-  width: 100%;
-  max-height: 340px;
 }
 
 .card .card-image img {

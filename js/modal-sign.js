@@ -48,6 +48,6 @@ const showModal = () => {
 
   document.body.append(modalWrap);
 
-  var modal = new bootstrap.Modal(modalWrap.querySelector("#exampleModal"));
+  let modal = new bootstrap.Modal(modalWrap.querySelector("#exampleModal"));
   modal.show();
 };

@@ -219,19 +219,19 @@ const showListMovies = (data) => {
   movieListID.innerHTML = "";
   data.slice(0, 18).forEach((item) => {
     movieListID.innerHTML += `
-    <div class="col-sm-6 col-md-4 col-xl-2">
-      <div class="card p-0">
-          <div class="card-image">
-              <img src="${imageURL}/${item.poster_path}" alt="">
-          </div>
-          <div class="card-content d-flex flex-column align-items-center">
-              <h4 class="pt-0">${item.title}</h4>
-            <div class="btn-cards-container d-flex justify-content-center pt-2">
-             <button class="btn btn-light launch btn-lg" data-bs-toggle="modal" data-bs-target="#modalMovies${item.id}">Movie details</button>
-            </div>
+    <div class="col-sm-12 col-md-4 col-lg-2">
+          <div class="card p-0">
+              <div class="card-image">
+                  <img src="${imageURL}/${item.poster_path}" alt="">
+              </div>
+              <div class="card-content d-flex flex-column align-items-center">
+                  <h4 class="pt-0">${item.title}</h4>
+                <div class="btn-cards-container d-flex justify-content-center pt-2">
+                  <button class="btn btn-light launch btn-lg" data-bs-toggle="modal" data-bs-target="#modalTrending${item.id}">Movie details</button>
+                </div>
+              </div>
           </div>
       </div>
-    </div>
     <!-- Modal -->
     <div
       class="modal fade"
