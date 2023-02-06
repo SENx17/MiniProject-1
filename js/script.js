@@ -227,7 +227,7 @@ const showListMovies = (data) => {
               <div class="card-content d-flex flex-column align-items-center">
                   <h4 class="pt-0">${item.title}</h4>
                 <div class="btn-cards-container d-flex justify-content-center pt-2">
-                  <button class="btn btn-light launch btn-lg" data-bs-toggle="modal" data-bs-target="#modalTrending${item.id}">Movie details</button>
+                  <button class="btn btn-light launch btn-lg" data-bs-toggle="modal" data-bs-target="#modalMovies${item.id}">Movie details</button>
                 </div>
               </div>
           </div>
